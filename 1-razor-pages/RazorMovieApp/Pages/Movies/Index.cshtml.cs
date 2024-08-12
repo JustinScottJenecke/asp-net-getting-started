@@ -12,9 +12,9 @@ namespace RazorMovieApp.Pages_Movies
 {
     public class IndexModel : PageModel
     {
-        // dependancy injected by .net
         private readonly RazorMovieDbContext _context;
 
+        // dependancy injected by .net in constructor
         public IndexModel(RazorMovieDbContext context)
         {
             _context = context;
