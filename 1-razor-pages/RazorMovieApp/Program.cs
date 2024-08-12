@@ -9,7 +9,12 @@ builder.Services.AddRazorPages();
 if (builder.Environment.IsDevelopment())
 {
     builder.Services.AddDbContext<RazorMovieDbContext>(options =>
-        options.UseSqlite(builder.Configuration.GetConnectionString("RazorPagesMovieContext")));
+        options.UseSqlite(
+            builder.Configuration.GetConnectionString("RazorMovieDbContext")  
+            ?? 
+            throw new InvalidOperationException("Connection string 'RazorMovieDbContext' not found.")
+        )
+    );
 }
 else
 {
