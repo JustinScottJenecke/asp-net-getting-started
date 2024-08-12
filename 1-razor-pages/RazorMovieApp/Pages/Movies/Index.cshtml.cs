@@ -12,18 +12,19 @@ namespace RazorMovieApp.Pages_Movies
 {
     public class IndexModel : PageModel
     {
-        private readonly RazorMovieApp.Data.RazorMovieDbContext _context;
+        // dependancy injected by .net
+        private readonly RazorMovieDbContext _context;
 
-        public IndexModel(RazorMovieApp.Data.RazorMovieDbContext context)
+        public IndexModel(RazorMovieDbContext context)
         {
             _context = context;
         }
 
-        public IList<Movie> Movie { get;set; } = default!;
+        public IList<Movie> Movies { get;set; } = default!;
 
         public async Task OnGetAsync()
         {
-            Movie = await _context.Movie.ToListAsync();
+            Movies = await _context.Movie.ToListAsync();
         }
     }
 }
