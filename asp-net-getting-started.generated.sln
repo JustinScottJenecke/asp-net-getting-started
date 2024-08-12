@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-razor-pages", "1-razor-pages", "{73E7C229-0CEE-40FC-8B2F-FD25B1D48AFE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-razor-pages", "1-razor-pages", "{45C1BC08-4FC4-4D7F-BEED-245D0D037A6D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorMovieApp", "1-razor-pages\RazorMovieApp\RazorMovieApp.csproj", "{23AC1CCF-7A83-4A7B-968A-166F6A322E9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorMovieApp", "1-razor-pages\RazorMovieApp\RazorMovieApp.csproj", "{A24339DD-8E8E-4FA0-AF34-3503090D6CDC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,16 +13,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{23AC1CCF-7A83-4A7B-968A-166F6A322E9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{23AC1CCF-7A83-4A7B-968A-166F6A322E9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{23AC1CCF-7A83-4A7B-968A-166F6A322E9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{23AC1CCF-7A83-4A7B-968A-166F6A322E9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A24339DD-8E8E-4FA0-AF34-3503090D6CDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A24339DD-8E8E-4FA0-AF34-3503090D6CDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A24339DD-8E8E-4FA0-AF34-3503090D6CDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A24339DD-8E8E-4FA0-AF34-3503090D6CDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{23AC1CCF-7A83-4A7B-968A-166F6A322E9B} = {73E7C229-0CEE-40FC-8B2F-FD25B1D48AFE}
+		{A24339DD-8E8E-4FA0-AF34-3503090D6CDC} = {45C1BC08-4FC4-4D7F-BEED-245D0D037A6D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DA83BC76-856E-4BE0-919D-9CD401A9F3C0}

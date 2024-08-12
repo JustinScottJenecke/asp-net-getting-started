@@ -5,9 +5,17 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddDbContext<RazorMovieDbContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("RazorMovieDbContext") ?? throw new InvalidOperationException("Connection string 'RazorMovieDbContext' not found.")));
 
+if (builder.Environment.IsDevelopment())
+{
+    builder.Services.AddDbContext<RazorMovieDbContext>(options =>
+        options.UseSqlite(builder.Configuration.GetConnectionString("RazorPagesMovieContext")));
+}
+else
+{
+    builder.Services.AddDbContext<RazorMovieDbContext>(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("ProductionMovieContext")));
+}
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
