@@ -21,6 +21,7 @@ namespace RazorMovieApp.Pages_Movies
         }
 
         public IList<Movie> Movies { get;set; } = default!;
+        public int Operations {get; set;}
 
         public async Task OnGetAsync()
         {

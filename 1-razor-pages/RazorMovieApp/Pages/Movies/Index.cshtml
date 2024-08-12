@@ -2,7 +2,7 @@
 @model RazorMovieApp.Pages_Movies.IndexModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Movies";
 }
 
 <h1>Index</h1>
@@ -25,6 +25,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Movies[0].Price)
             </th>
+            @* <th>
+                @Html.DisplayNameFor(model => model.Operations)
+            </th> *@
             <th></th>
         </tr>
     </thead>

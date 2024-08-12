@@ -25,16 +25,22 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Movies/Index">Movies</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
+    @* Body Containter *@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
+    @* Body Containter *@
 
     <footer class="border-top footer text-muted">
         <div class="container">
