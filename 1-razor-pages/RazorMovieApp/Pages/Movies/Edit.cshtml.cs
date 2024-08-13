@@ -23,6 +23,8 @@ namespace RazorMovieApp.Pages_Movies
         [BindProperty]
         public Movie Movie { get; set; } = default!;
 
+        public string Test {get;set;} = "Test";
+
         public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null)
