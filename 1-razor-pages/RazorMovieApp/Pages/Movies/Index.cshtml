@@ -3,6 +3,7 @@
 
 @{
     ViewData["Title"] = "Movies";
+    Model.Operations = 2;
 }
 
 <h1>Index</h1>
@@ -10,6 +11,7 @@
 <p>
     <a asp-page="Create">Create New</a>
 </p>
+<p>@Model.Operations</p>
 <table class="table">
     <thead>
         <tr>
@@ -25,9 +27,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.Movies[0].Price)
             </th>
-            @* <th>
-                @Html.DisplayNameFor(model => model.Operations)
-            </th> *@
             <th></th>
         </tr>
     </thead>

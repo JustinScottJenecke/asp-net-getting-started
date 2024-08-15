@@ -20,12 +20,34 @@ namespace RazorMovieApp.Pages_Movies
             _context = context;
         }
 
-        public IList<Movie> Movies { get;set; } = default!;
+        // === Model Propertues ===
+        public IList<Movie> Movies { get; set;} = default!;
         public int Operations {get; set;}
 
+        [BindProperty(SupportsGet = true)]
+        public string ? SearchString {get; set;}
+
+        // public SelectList Genres {get;set;}
+
+        [BindProperty(SupportsGet = true)]
+        public string ? MovieGenre {get; set;}
+
+        // === Get Request Handler ===
         public async Task OnGetAsync()
         {
-            Movies = await _context.Movie.ToListAsync();
+            // grab data from db
+            var dbMovies = await _context.Movie.ToListAsync();
+
+            // if search string has value perform filter
+            if(!string.IsNullOrEmpty(SearchString)) 
+            {
+                var filteredMovies = dbMovies.ToList().Where(m => m.Title.Contains(SearchString));
+                Movies = filteredMovies.ToList();
+            } else 
+            {
+                // else save all db movies into Movies prop
+                Movies = dbMovies;
+            }            
         }
     }
 }
