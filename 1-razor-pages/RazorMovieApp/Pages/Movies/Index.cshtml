@@ -12,13 +12,26 @@
 
 <h1>Movie List</h1>
 
-<p>
+<h3>
     Filter
-</p>
-<form method="get">
-    <input type="text" asp-for="@Model.SearchString">
-    <input type="submit" value="Filter">
-</form>
+</h3>
+
+<div>
+    <p>Filter by search string</p>
+    <form method="get">
+        <input type="text" asp-for="@Model.SearchString">
+        <input type="submit" value="Filter">
+    </form>
+</div>
+
+<div>
+    <p>Filter by Genre</p>
+    <form method="get">
+        @* <input type="text" asp-for="@Model.SearchString"> *@
+        <select asp-for="@Model.GenreSearchString" asp-items="@Model.Genres"></select>
+        <input type="submit" value="Filter">
+    </form>
+</div>
 
 <hr>
 
