@@ -1,4 +1,8 @@
-@page
+ @* 
+    allows page to use prop as path parameter
+    @page "{SearchString?}" 
+*@
+ @page
 @model RazorMovieApp.Pages_Movies.IndexModel
 
 @{
@@ -6,12 +10,21 @@
     Model.Operations = 2;
 }
 
-<h1>Index</h1>
+<h1>Movie List</h1>
+
+<p>
+    Filter
+</p>
+<form method="get">
+    <input type="text" asp-for="@Model.SearchString">
+    <input type="submit" value="Filter">
+</form>
+
+<hr>
 
 <p>
     <a asp-page="Create">Create New</a>
 </p>
-<p>@Model.Operations</p>
 <table class="table">
     <thead>
         <tr>
