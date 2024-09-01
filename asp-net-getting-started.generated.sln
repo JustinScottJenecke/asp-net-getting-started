@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-razor-pages", "1-razor-pages", "{B7CAD2D1-A036-4F48-9880-46C9A4AF0859}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-razor-pages", "1-razor-pages", "{8319A6F3-99B6-4458-904B-DB2B304F3BF6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorMovieApp", "1-razor-pages\RazorMovieApp\RazorMovieApp.csproj", "{94B01FA1-A9F3-4944-939E-75B3A3FFA1A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorMovieApp", "1-razor-pages\RazorMovieApp\RazorMovieApp.csproj", "{9BDFC2E4-0724-45C1-99E8-5BB2CC01296B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-mvc", "2-mvc", "{FCB472D0-5A57-4F92-9940-CDC3B075DD1E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcMovie", "2-mvc\MvcMovie\MvcMovie.csproj", "{ADAB8E3D-CA01-40D7-ACAF-18B3F83B1E0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,16 +17,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{94B01FA1-A9F3-4944-939E-75B3A3FFA1A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{94B01FA1-A9F3-4944-939E-75B3A3FFA1A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{94B01FA1-A9F3-4944-939E-75B3A3FFA1A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{94B01FA1-A9F3-4944-939E-75B3A3FFA1A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BDFC2E4-0724-45C1-99E8-5BB2CC01296B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BDFC2E4-0724-45C1-99E8-5BB2CC01296B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BDFC2E4-0724-45C1-99E8-5BB2CC01296B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BDFC2E4-0724-45C1-99E8-5BB2CC01296B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADAB8E3D-CA01-40D7-ACAF-18B3F83B1E0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADAB8E3D-CA01-40D7-ACAF-18B3F83B1E0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADAB8E3D-CA01-40D7-ACAF-18B3F83B1E0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADAB8E3D-CA01-40D7-ACAF-18B3F83B1E0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{94B01FA1-A9F3-4944-939E-75B3A3FFA1A6} = {B7CAD2D1-A036-4F48-9880-46C9A4AF0859}
+		{9BDFC2E4-0724-45C1-99E8-5BB2CC01296B} = {8319A6F3-99B6-4458-904B-DB2B304F3BF6}
+		{ADAB8E3D-CA01-40D7-ACAF-18B3F83B1E0B} = {FCB472D0-5A57-4F92-9940-CDC3B075DD1E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DA83BC76-856E-4BE0-919D-9CD401A9F3C0}
