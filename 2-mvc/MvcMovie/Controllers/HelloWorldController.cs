@@ -19,7 +19,7 @@ namespace MvcMovie.Controllers
 
         public IActionResult Welcome(string name, int numTimes = 1)
         {
-            ViewData["message"] = $"Welcome {name} ";
+            ViewData["Message"] = $"Welcome {name} ";
             ViewData["NumTimes"] = numTimes;
 
             // if (String.IsNullOrEmpty(name))
