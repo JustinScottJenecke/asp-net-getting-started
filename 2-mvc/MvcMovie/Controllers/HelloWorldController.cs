@@ -17,13 +17,17 @@ namespace MvcMovie.Controllers
             return View();
         }
 
-        public string Welcome(string name, int numTimes = 1)
+        public IActionResult Welcome(string name, int numTimes = 1)
         {
-            if (String.IsNullOrEmpty(name))
-            {
-                return $"Welcome action method return value";  
-            }
-            return HtmlEncoder.Default.Encode($"Welcome action method, num of times is {numTimes}");
+            ViewData["message"] = $"Welcome {name} ";
+            ViewData["NumTimes"] = numTimes;
+
+            // if (String.IsNullOrEmpty(name))
+            // {
+            //     return $"Welcome action method return value";  
+            // }
+            // return HtmlEncoder.Default.Encode($"Welcome {name}, num of times is {numTimes}");
+            return View();
         }
 
     }
