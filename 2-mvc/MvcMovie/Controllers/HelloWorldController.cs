@@ -1,3 +1,4 @@
+using System.Text.Encodings.Web;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MvcMovie.Controllers
@@ -15,14 +16,13 @@ namespace MvcMovie.Controllers
             return "This is my default action.";
         }
 
-        public string Welcome(string? name)
+        public string Welcome(string name, int numTimes = 1)
         {
             if (String.IsNullOrEmpty(name))
             {
-                return $"Welcome action method";                 
+                return $"Welcome action method return value";  
             }
-
-            return $"Welcome {name}";  
+            return HtmlEncoder.Default.Encode($"Welcome action method, num of times is {numTimes}");
         }
 
     }
