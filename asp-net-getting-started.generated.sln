@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-razor-pages", "1-razor-pages", "{47B5CD0E-CF30-4238-8E74-A81AB831FA5E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-razor-pages", "1-razor-pages", "{35277894-42B2-429A-B546-12B279B28240}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorMovieApp", "1-razor-pages\RazorMovieApp\RazorMovieApp.csproj", "{A586DF7E-0CCE-4B6E-A695-49EEC2C7A6E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorMovieApp", "1-razor-pages\RazorMovieApp\RazorMovieApp.csproj", "{CC520D44-9A63-42AF-9DBA-C59AB7574E7E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-mvc", "2-mvc", "{558C5FB1-73DE-4DFD-A932-E3B7AC83A9AC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-mvc", "2-mvc", "{8AC5BFD5-1394-47AE-9710-0DB2E198B07F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcMovie", "2-mvc\MvcMovie\MvcMovie.csproj", "{1B06BD03-68C1-46CA-AF0D-D4A050778CE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcMovie", "2-mvc\MvcMovie\MvcMovie.csproj", "{56DB55E9-DF8F-4554-BF7E-BCBDCC1F087B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,21 +17,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A586DF7E-0CCE-4B6E-A695-49EEC2C7A6E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A586DF7E-0CCE-4B6E-A695-49EEC2C7A6E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A586DF7E-0CCE-4B6E-A695-49EEC2C7A6E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A586DF7E-0CCE-4B6E-A695-49EEC2C7A6E7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1B06BD03-68C1-46CA-AF0D-D4A050778CE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B06BD03-68C1-46CA-AF0D-D4A050778CE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1B06BD03-68C1-46CA-AF0D-D4A050778CE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1B06BD03-68C1-46CA-AF0D-D4A050778CE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC520D44-9A63-42AF-9DBA-C59AB7574E7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC520D44-9A63-42AF-9DBA-C59AB7574E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC520D44-9A63-42AF-9DBA-C59AB7574E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC520D44-9A63-42AF-9DBA-C59AB7574E7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56DB55E9-DF8F-4554-BF7E-BCBDCC1F087B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56DB55E9-DF8F-4554-BF7E-BCBDCC1F087B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56DB55E9-DF8F-4554-BF7E-BCBDCC1F087B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56DB55E9-DF8F-4554-BF7E-BCBDCC1F087B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A586DF7E-0CCE-4B6E-A695-49EEC2C7A6E7} = {47B5CD0E-CF30-4238-8E74-A81AB831FA5E}
-		{1B06BD03-68C1-46CA-AF0D-D4A050778CE0} = {558C5FB1-73DE-4DFD-A932-E3B7AC83A9AC}
+		{CC520D44-9A63-42AF-9DBA-C59AB7574E7E} = {35277894-42B2-429A-B546-12B279B28240}
+		{56DB55E9-DF8F-4554-BF7E-BCBDCC1F087B} = {8AC5BFD5-1394-47AE-9710-0DB2E198B07F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DA83BC76-856E-4BE0-919D-9CD401A9F3C0}
