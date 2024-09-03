@@ -7,11 +7,13 @@ var builder = WebApplication.CreateBuilder(args);
 // configure differnet database depending on running environment
 if (builder.Environment.IsDevelopment())
 {
+    // registers dbcontext in DI container
     builder.Services.AddDbContext<MvcMovieContext>(options =>
         options.UseSqlite(builder.Configuration.GetConnectionString("MvcMovieContext")));
 }
 else
 {
+    // registers dbcontext in DI container
     builder.Services.AddDbContext<MvcMovieContext>(options =>
         options.UseSqlServer(builder.Configuration.GetConnectionString("ProductionMvcMovieContext")));
 }
